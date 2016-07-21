@@ -85,7 +85,7 @@ public class registercontoller extends HttpServlet {
 		}
 		else
 		{
-			RequestDispatcher rd=request.getRequestDispatcher("register.jsp");  
+			RequestDispatcher rd=request.getRequestDispatcher("New_Registration.jsp");  
 	        rd.forward(request,response); 
 	        out.println("User already exists..."
 					+ "please try again...");

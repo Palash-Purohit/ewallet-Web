@@ -146,7 +146,7 @@
 								href="${pageContext.request.contextPath}/aboutus.jsp">About
 									Us</a></li>
 							<li><a
-								href="${pageContext.request.contextPath}/policies.jsp">Transfer
+								href="${pageContext.request.contextPath}/login.jsp">Transfer
 									Money</a></li>
 							<li><a
 								href="${pageContext.request.contextPath}/contactus.jsp">Contact
