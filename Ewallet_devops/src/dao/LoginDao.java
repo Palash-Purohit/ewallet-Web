@@ -46,6 +46,7 @@ public class LoginDao {
 		catch(Exception e)
 		{
 		System.out.println("False is working");
+		e.printStackTrace();
 		}  		    
 	return user1;
 }

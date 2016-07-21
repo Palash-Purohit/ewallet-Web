@@ -20,6 +20,7 @@ public class ConnectionManager {
 		e.printStackTrace();
 		}
 	catch (SQLException e1){
+		System.out.println("connection driver not found");
 		e1.printStackTrace();
 		}
 		return conn;
