@@ -78,14 +78,14 @@ public class registercontoller extends HttpServlet {
 		
 		if(Service.registerdao(user))
 		{	
-			RequestDispatcher rd=request.getRequestDispatcher("login.jsp");  
+			RequestDispatcher rd=request.getRequestDispatcher("RegistratonStatus.jsp");  
 	        rd.forward(request,response); 
 	        out.println("You have been registered successfully!!");
 	        
 		}
 		else
 		{
-			RequestDispatcher rd=request.getRequestDispatcher("New_Registration.jsp");  
+			RequestDispatcher rd=request.getRequestDispatcher("RegistratonStatusFail.jsp");  
 	        rd.forward(request,response); 
 	        out.println("User already exists..."
 					+ "please try again...");
