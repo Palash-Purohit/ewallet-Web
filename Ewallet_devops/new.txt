@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 this line is added by palash.
 this line is added by ankita.
+=======
+this line is added by Bhavna.
+>>>>>>> branch 'master' of http://172.29.180.136:80/ewallet.git
