@@ -107,7 +107,7 @@ public class TransactDao {
 			        }
 			        catch(SQLException e)
 			        {
-			            logger.error("The result set cannot be closed.", e);
+			           // logger.error("The result set cannot be closed.", e);
 			        }
 			    }
 		}
