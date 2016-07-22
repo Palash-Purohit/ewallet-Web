@@ -3,6 +3,7 @@ package controller;
 import java.io.IOException;
 import java.sql.SQLException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -68,8 +69,9 @@ public class Add extends HttpServlet {
 		 
 		 /* RequestDispatcher reqDispatcher = getServletConfig().getServletContext().getRequestDispatcher("javaPapers.jsp");
 	        reqDispatcher.forward(request,response);*/
-		 request.getRequestDispatcher("javaPapers.jsp").forward(request,response);
-		 
+		/* request.getRequestDispatcher("javaPapers.jsp").forward(request,response);*/
+		 RequestDispatcher rd=request.getRequestDispatcher("AddStatus.jsp");
+	        rd.forward(request,response);
 		 
 		 BenService bs= new BenService();
 		
