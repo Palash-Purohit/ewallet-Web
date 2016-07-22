@@ -1,1 +1,7 @@
 /controller/
+/.sonar/
+/bean/
+/connection/
+/dao/
+/service/
+/sonar-project.properties
