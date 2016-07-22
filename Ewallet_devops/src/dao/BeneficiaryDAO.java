@@ -27,8 +27,9 @@ public class BeneficiaryDAO {
 			} else {
 				System.out.println("Unknown User.....Register here !!!!!!");
 			}
-			
 			con.close();
+			ps0.close();
+			ps1.close();
 			} catch (Exception e) {
 			System.out.println("Exception in View ");
 			e.printStackTrace();
