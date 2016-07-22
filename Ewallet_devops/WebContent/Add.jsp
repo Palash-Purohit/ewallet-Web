@@ -75,7 +75,7 @@
 				<!-- end of search -->
 				<div class="cl">&nbsp;</div>
 				<h4 align="right">
-					Welcome Home
+					Welcome 
 					<%=session.getAttribute("name")%></h4>
 				<h4 align="right">
 					Phone

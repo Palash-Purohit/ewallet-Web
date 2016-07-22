@@ -1,11 +1,10 @@
 package controller;
-
 import java.io.IOException;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import service.BenService;
 import bean.BenBean;
 
@@ -43,34 +42,32 @@ public class Add extends HttpServlet {
 		long mob = Long.parseLong(request.getParameter("mobile"));
 
 		bean.setMobile(mob);
-		System.out.println(mob);
-
-		// String mob=request.getParameter("mobile");
-		// bean.setMobile(mob);
-
+	//	System.out.println(mob);
 		String name = request.getParameter("name");
-		System.out.println(name);
+	//	System.out.println(name);
 		bean.setName(name);
 
 		String email = request.getParameter("email");
-		System.out.println(email);
+		//System.out.println(email);
 		bean.setEmail(email);
 
 		// request.setAttribute("mobile", mob);
-		request.setAttribute("name", name);
-		request.setAttribute("email", email);
 
-		/*
-		 * RequestDispatcher reqDispatcher =
-		 * getServletConfig().getServletContext().getRequestDispatcher(
-		 * "javaPapers.jsp"); reqDispatcher.forward(request,response);
-		 */
-		request.getRequestDispatcher("javaPapers.jsp").forward(request, response);
-
-		BenService bs = new BenService();
-
-		bs.addBeneficiary(bean);
-
+		 request.setAttribute("name", name);
+		 request.setAttribute("email", email);
+		
+		 
+		 /* RequestDispatcher reqDispatcher = getServletConfig().getServletContext().getRequestDispatcher("javaPapers.jsp");
+	        reqDispatcher.forward(request,response);*/
+		/* request.getRequestDispatcher("javaPapers.jsp").forward(request,response);*/
+		 RequestDispatcher rd=request.getRequestDispatcher("AddStatus.jsp");
+	        rd.forward(request,response);
+		 
+		 BenService bs= new BenService();
+		
+			bs.addBeneficiary(bean);
+		
+		
 	}
 
 }
