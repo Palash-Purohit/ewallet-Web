@@ -34,7 +34,9 @@
 					</form>
 				</div>
 				<!-- end of search -->
+				
 				<div class="cl">&nbsp;</div>
+				
 			</header>
 			<!-- end of header -->
 			<!-- navigaation -->

@@ -89,7 +89,8 @@
 					<!-- <div id="header"></div> -->
 
 
-					<nav id="navigation"> <a href="#" class="nav-btn">HOME<span></span></a>
+					<nav id="navigation"> 
+					<a href="#" class="nav-btn">HOME<span></span></a>
 					<ul>
 						<li><a href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
 						<li><a href="${pageContext.request.contextPath}/aboutus.jsp">About
@@ -103,34 +104,33 @@
 
 					</ul>
 					
-					</nav>
-					<!-- <div class="cl">&nbsp;</div> -->
+					
+					<div class="cl">&nbsp;</div>
+</nav>
 
 
 
 
-
-
+<div id="first"	>
 
 				
-						<fieldset 
-						style="width: 50%; height: 65%; margin-left: 20%; border-radius: 8px">
-
-							<div>
+					
+							<!-- <div>
 								<h2
 									style="background-color: #000000; color: white; text-align: center; padding: 5px;"> Transfer
 									Money</h2>
 							</div>
-							
-							<div id="first">
+							 -->
+						
 
 
-	<a href="Add.jsp">ADD BENEFICIARY</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="SendMoney.jsp">TRANSFER MONEY</a>
+	<a href="Add.jsp"><h3 align="center">ADD BENEFICIARY</h3></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="SendMoney.jsp"><h3 align="center">TRANSFER MONEY</h3></a>
 
-</div>
-</fieldset>
-					</form>
+
+
+		</div>		
+			
 					<div id="footer">
 						<div class="footer-nav">
 							<ul>
