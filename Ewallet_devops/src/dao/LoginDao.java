@@ -1,30 +1,17 @@
 package dao;
 
 import java.sql.*;
-
 import bean.User;
-
-
+import connection.ConnectionManager;
 public class LoginDao {
-	
-	
-
-	
 	public static User validate(long mobile,String pass){  
 		boolean status=false;  
-		
 		User user1=new User();
-		
 		try{  
-			
-			
 			System.out.println("Inside dao class" + mobile + pass);
 			Class.forName("com.mysql.jdbc.Driver");  
-			  
-			Connection con=DriverManager.getConnection(  
-			"jdbc:mysql://172.29.180.95:3306/wallet","user","password"); 
-		      
-		PreparedStatement ps=con.prepareStatement("select user_id,first_name,last_name,phone from user where phone=? and pswd=? ");  
+			Connection con=ConnectionManager.getConnection();
+			PreparedStatement ps=con.prepareStatement("select user_id,first_name,last_name,phone from user where phone=? and pswd=? ");  
 		ps.setLong(1,mobile);  
 		ps.setString(2,pass);  
 		      
@@ -41,7 +28,8 @@ public class LoginDao {
 		System.out.println("Phone number " + user1.getPhone());
 		System.out.println("status of query " +" " +status);
 		System.out.println("True");
-		          
+		       con.close();
+		       ps.close();
 		}
 		catch(Exception e)
 		{
