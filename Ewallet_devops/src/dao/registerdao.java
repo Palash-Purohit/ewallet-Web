@@ -24,8 +24,7 @@ public class registerdao {
 		}
 		else
 			{
-			
-								ps.setString(1,user.getFirst());  
+					ps.setString(1,user.getFirst());  
 					ps.setString(2,user.getLast());
 					ps.setString(3,user.getDob());
 					ps.setString(4,user.getGender());
@@ -42,6 +41,7 @@ public class registerdao {
 			}
 			con.close();
 			ps.close();
+			ps1.close();
 		}
 		catch(Exception e){
 			e.printStackTrace();
