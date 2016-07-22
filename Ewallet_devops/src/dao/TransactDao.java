@@ -32,11 +32,11 @@ System.out.println(tb1.getUmobile());
 		}else{
 		do{
 			System.out.println("User Details:"+rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.getString(3));
-			tb.setUser_id(rs.getString(2));
+			tb.setuserId(rs.getString(2));
 		
 			tb.setUmobile(rs.getLong(8));
 			tb.setAmount(rs.getInt(7));
-			System.out.println("User Details"+tb.getUser_id()+" "+tb.getUmobile()+" "+tb.getAmount());
+			System.out.println("User Details"+tb.getuserId()+" "+tb.getUmobile()+" "+tb.getAmount());
 			flag=1;
 		}while (rs.next());
 		}
@@ -46,12 +46,12 @@ System.out.println(tb1.getUmobile());
 		while(rs1.next()){
 		
 		System.out.println("Beneficiary Details:"+rs1.getInt(1) + "  " + rs1.getString(2) + "  " + rs1.getString(3));
-		tb2.setUser_id(rs1.getString(2));
+		tb2.setuserId(rs1.getString(2));
 	
 		tb2.setUmobile(rs1.getLong(8));
 		tb2.setAmount(rs1.getInt(7));
 		
-		System.out.println("Beneficiary Dteails:"+tb2.getUser_id()+" "+tb2.getUmobile()+" "+tb2.getAmount());
+		System.out.println("Beneficiary Dteails:"+tb2.getuserId()+" "+tb2.getUmobile()+" "+tb2.getAmount());
 		}
 		
 		
@@ -69,23 +69,23 @@ System.out.println(tb1.getUmobile());
 	      
 	      String insert1="insert into transaction values(?,?,?,?,?,?,?)";
 	      PreparedStatement insertstmt1 = con.prepareStatement(insert1);
-	      insertstmt1.setString(1,tb2.getUser_id());
+	      insertstmt1.setString(1,tb2.getuserId());
 	      insertstmt1.setLong(2, tb2.getUmobile());
-	      insertstmt1.setString(3,tb.getUser_id());
+	      insertstmt1.setString(3,tb.getuserId());
 	      insertstmt1.setLong(4, tb.getUmobile());
 	      insertstmt1.setInt(5,tb1.getAmount());
 	      insertstmt1.setInt(6,0);
-	      insertstmt1.setString(7, tb1.getTransfer_detail());
+	      insertstmt1.setString(7, tb1.getdetails());
 	      
 	      String insert="insert into transaction values(?,?,?,?,?,?,?)";
 	      PreparedStatement insertstmt = con.prepareStatement(insert);
-	      insertstmt.setString(1,tb.getUser_id());
+	      insertstmt.setString(1,tb.getuserId());
 	      insertstmt.setLong(2, tb.getUmobile());
-	      insertstmt.setString(3,tb2.getUser_id());
+	      insertstmt.setString(3,tb2.getuserId());
 	      insertstmt.setLong(4, tb2.getUmobile());
 	      insertstmt.setInt(5,0);
 	      insertstmt.setInt(6,tb1.getAmount());
-	      insertstmt.setString(7, tb1.getTransfer_detail());
+	      insertstmt.setString(7, tb1.getdetails());
 	   
 	      // execute the java preparedstatement
 	      preparedStmt.executeUpdate();
