@@ -14,18 +14,24 @@ public class TransactDao {
 
 	public int sendMoney(TransactBean tb1) {
 		System.out.println(tb1.getAmount());
-
+		Connection con = null;
+				Statement stmt = null;
+		Statement stmt1= null;
+		PreparedStatement preparedStmt = null;
+		PreparedStatement preparedStmt1 =null;
+		ResultSet rs =null;
+		ResultSet rs1 =null;
 		try {
 			int flag;
-			Connection con = ConnectionManager.getConnection();
-			Statement stmt = con.createStatement();
-			Statement stmt1 = con.createStatement();
+			con = ConnectionManager.getConnection();
+			stmt = con.createStatement();
+			stmt1 = con.createStatement();
 			String query = "update user set amount = ? where phone = ?";
-			PreparedStatement preparedStmt = con.prepareStatement(query);
-			PreparedStatement preparedStmt1 = con.prepareStatement(query);
+			 preparedStmt = con.prepareStatement(query);
+			preparedStmt1 = con.prepareStatement(query);
 			System.out.println(tb1.getUmobile());
-			ResultSet rs = stmt.executeQuery("select * from user where phone=" + tb1.getUmobile() + ";");
-			ResultSet rs1 = stmt1.executeQuery("select * from user where phone=" + tb1.getMobile() + ";");
+			rs= stmt.executeQuery("select * from user where phone=" + tb1.getUmobile() + ";");
+			rs1 = stmt1.executeQuery("select * from user where phone=" + tb1.getMobile() + ";");
 			if (!rs.next()) {
 				System.out.println("no data");
 				flag = 0;
@@ -81,16 +87,29 @@ public class TransactDao {
 			preparedStmt1.executeUpdate();
 			insertstmt.executeUpdate();
 			insertstmt1.executeUpdate();
-			rs.close();
+			
 			rs1.close();
 			stmt.close();
 			stmt1.close();
-			preparedStmt.close();
-			preparedStmt1.close();
+			
 			con.close();
 			return 1;
 		} catch (SQLException e) {
 			e.printStackTrace();
+		}
+		finally{
+			 if (rs!=null)
+			    {
+			        try
+			        {
+			            rs.close();
+
+			        }
+			        catch(SQLException e)
+			        {
+			            logger.error("The result set cannot be closed.", e);
+			        }
+			    }
 		}
 		/*
 		 * String query="UPDATE user SET amount="+value, column2=value2,...
