@@ -87,6 +87,8 @@ public class TransactDao {
 			preparedStmt1.executeUpdate();
 			insertstmt.executeUpdate();
 			insertstmt1.executeUpdate();
+			insertstmt.close();
+			insertstmt1.close();
 			return 1;
 		} catch (SQLException e) {
 			e.printStackTrace();
