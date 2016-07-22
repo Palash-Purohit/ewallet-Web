@@ -56,6 +56,9 @@ public class TransactDao {
 			preparedStmt1.setLong(2, tb1.getMobile());
 			String insert1 = "insert into transaction values(?,?,?,?,?,?,?)";
 			PreparedStatement insertstmt1 = con.prepareStatement(insert1);
+			String insert = "insert into transaction values(?,?,?,?,?,?,?)";
+			PreparedStatement insertstmt = con.prepareStatement(insert);
+			try{
 			insertstmt1.setString(1, tb2.getuserId());
 			insertstmt1.setLong(2, tb2.getUmobile());
 			insertstmt1.setString(3, tb.getuserId());
@@ -63,8 +66,7 @@ public class TransactDao {
 			insertstmt1.setInt(5, tb1.getAmount());
 			insertstmt1.setInt(6, 0);
 			insertstmt1.setString(7, tb1.getdetails());
-			String insert = "insert into transaction values(?,?,?,?,?,?,?)";
-			PreparedStatement insertstmt = con.prepareStatement(insert);
+			
 			insertstmt.setString(1, tb.getuserId());
 			insertstmt.setLong(2, tb.getUmobile());
 			insertstmt.setString(3, tb2.getuserId());
@@ -75,7 +77,10 @@ public class TransactDao {
 			preparedStmt.executeUpdate();
 			preparedStmt1.executeUpdate();
 			insertstmt.executeUpdate();
-			insertstmt1.executeUpdate();
+			insertstmt1.executeUpdate();}
+			catch(SQLException e){
+				e.printStackTrace();
+			}
 			con.close();
 			stmt.close();
 			stmt1.close();
