@@ -14,11 +14,15 @@ public class TransactDao {
 
 	public int sendMoney(TransactBean tb1) {
 		System.out.println(tb1.getAmount());
-		Connection con = ConnectionManager.getConnection();
+
 		try {
 			int flag;
+			Connection con = ConnectionManager.getConnection();
 			Statement stmt = con.createStatement();
 			Statement stmt1 = con.createStatement();
+			String query = "update user set amount = ? where phone = ?";
+			PreparedStatement preparedStmt = con.prepareStatement(query);
+			PreparedStatement preparedStmt1 = con.prepareStatement(query);
 			System.out.println(tb1.getUmobile());
 			ResultSet rs = stmt.executeQuery("select * from user where phone=" + tb1.getUmobile() + ";");
 			ResultSet rs1 = stmt1.executeQuery("select * from user where phone=" + tb1.getMobile() + ";");
@@ -47,18 +51,17 @@ public class TransactDao {
 				System.out.println(
 						"Beneficiary Dteails:" + tb2.getuserId() + " " + tb2.getUmobile() + " " + tb2.getAmount());
 			}
-			String query = "update user set amount = ? where phone = ?";
-			PreparedStatement preparedStmt = con.prepareStatement(query);
+
 			preparedStmt.setInt(1, tb.getAmount() - tb1.getAmount());
 			preparedStmt.setLong(2, tb1.getUmobile());
-			PreparedStatement preparedStmt1 = con.prepareStatement(query);
+
 			preparedStmt1.setInt(1, tb2.getAmount() + tb1.getAmount());
 			preparedStmt1.setLong(2, tb1.getMobile());
 			String insert1 = "insert into transaction values(?,?,?,?,?,?,?)";
 			PreparedStatement insertstmt1 = con.prepareStatement(insert1);
 			String insert = "insert into transaction values(?,?,?,?,?,?,?)";
 			PreparedStatement insertstmt = con.prepareStatement(insert);
-			try{
+
 			insertstmt1.setString(1, tb2.getuserId());
 			insertstmt1.setLong(2, tb2.getUmobile());
 			insertstmt1.setString(3, tb.getuserId());
@@ -66,7 +69,7 @@ public class TransactDao {
 			insertstmt1.setInt(5, tb1.getAmount());
 			insertstmt1.setInt(6, 0);
 			insertstmt1.setString(7, tb1.getdetails());
-			
+
 			insertstmt.setString(1, tb.getuserId());
 			insertstmt.setLong(2, tb.getUmobile());
 			insertstmt.setString(3, tb2.getuserId());
@@ -77,19 +80,13 @@ public class TransactDao {
 			preparedStmt.executeUpdate();
 			preparedStmt1.executeUpdate();
 			insertstmt.executeUpdate();
-			insertstmt1.executeUpdate();}
-			catch(SQLException e){
-				e.printStackTrace();
-			}
-			con.close();
+			insertstmt1.executeUpdate();
 			stmt.close();
 			stmt1.close();
 			preparedStmt.close();
 			preparedStmt1.close();
-			rs.close();
-			rs1.close();
+			con.close();
 			return 1;
-
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
