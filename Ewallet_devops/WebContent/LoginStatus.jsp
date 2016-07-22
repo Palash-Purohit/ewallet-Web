@@ -84,7 +84,7 @@
 	</p>
 				</header>
 
-				<div id="all">
+			<!-- 	<div id="all"> -->
 
 					<!-- <div id="header"></div> -->
 
@@ -160,6 +160,6 @@
 			</div>
 			<!-- end of shell -->
 		</div>
-		</div>
+		
 </body>
 </html>

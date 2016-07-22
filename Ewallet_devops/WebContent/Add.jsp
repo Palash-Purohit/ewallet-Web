@@ -85,12 +85,13 @@
 	</p>
 				</header>
 
-				<div id="all">
+				<!-- <div id="all"> -->
 
 					<!-- <div id="header"></div> -->
 
 
-					<nav id="navigation"> <a href="#" class="nav-btn">HOME<span></span></a>
+					<nav id="navigation">
+					 <a href="#" class="nav-btn">HOME<span></span></a>
 					<ul>
 						<li><a href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
 						<li><a href="${pageContext.request.contextPath}/aboutus.jsp">About
@@ -111,7 +112,7 @@
 
 <div id="first">
 
-					<form action="../Add" name="register" method="post">
+					<form action="Add" name="register" method="post">
 						<fieldset
 							style="width: 80%; height: 65%; margin-left: 20%; border-radius: 8px">
 
@@ -169,7 +170,7 @@
 
 								</table>
 						</fieldset>
-					</form>
+					</form></div>
 					<div id="footer">
 						<div class="footer-nav">
 							<ul>
