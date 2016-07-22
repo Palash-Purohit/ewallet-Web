@@ -81,6 +81,8 @@ public class TransactDao {
 			preparedStmt1.executeUpdate();
 			insertstmt.executeUpdate();
 			insertstmt1.executeUpdate();
+			rs.close();
+			rs1.close();
 			stmt.close();
 			stmt1.close();
 			preparedStmt.close();
