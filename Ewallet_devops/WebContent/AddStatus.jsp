@@ -63,9 +63,9 @@
 			</nav>
 			
 		<div id="first">
-<p><h3>You have successfully registered !!!</h3></h3></p>
+<p><h3>Beneficiary registered successfully!!!</h3></h3></p>
 
-<h2 align="center"> click here to <a href="login.jsp">click here to login</a></h2>
+<h2 align="center"> click here to <a href="SendMoney.jsp">Transfer Money</a></h2>
 
 
 </div>
