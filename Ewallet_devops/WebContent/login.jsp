@@ -87,7 +87,7 @@
 					
 					<tr>
 						<td><label>PassWord<sup style="color:red">*</sup></label></td>
-						<td><input type="password" name="userpass" id="firstname"
+						<td><input type="password" name="userpass" id="password"
 					class="form-control" placeholder="Password" required>  </td>
 					</tr>
 					<tr>
