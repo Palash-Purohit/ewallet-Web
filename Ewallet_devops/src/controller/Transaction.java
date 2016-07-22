@@ -2,8 +2,6 @@ package controller;
 
 import service.TansactService;
 import java.io.IOException;
-import java.math.BigInteger;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -45,12 +43,12 @@ public class Transaction extends HttpServlet {
 		System.out.println(req.getParameter("uname"));
 		transact.setUmobile(Long.parseLong(req.getParameter("uname")));
 		System.out.println(transact.getUmobile());
-		transact.setB_name(name);
+		transact.setbenName(name);
 		transact.setMobile(Long.parseLong(req.getParameter("mobile")));
 		System.out.println(transact.getMobile());
 		
 		transact.setAmount(Integer.parseInt(req.getParameter("amount")));
-		transact.setTransfer_detail(req.getParameter("detail"));
+		transact.setdetails(req.getParameter("detail"));
 		
 		
 		int b=ts.booking(transact);
