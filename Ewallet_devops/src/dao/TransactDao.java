@@ -86,6 +86,8 @@ public class TransactDao {
 			stmt1.close();
 			preparedStmt.close();
 			preparedStmt1.close();
+			rs.close();
+			rs1.close();
 			return 1;
 
 		} catch (SQLException e) {
