@@ -87,12 +87,6 @@ public class TransactDao {
 			preparedStmt1.executeUpdate();
 			insertstmt.executeUpdate();
 			insertstmt1.executeUpdate();
-			
-			rs1.close();
-			stmt.close();
-			stmt1.close();
-			
-			con.close();
 			return 1;
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -103,6 +97,73 @@ public class TransactDao {
 			        try
 			        {
 			            rs.close();
+
+			        }
+			        catch(SQLException e)
+			        {
+			           // logger.error("The result set cannot be closed.", e);
+			        }
+			    }if (rs1!=null)
+			    {
+			        try
+			        {
+			            rs1.close();
+
+			        }
+			        catch(SQLException e)
+			        {
+			           // logger.error("The result set cannot be closed.", e);
+			        }
+			    }if (preparedStmt!=null)
+			    {
+			        try
+			        {
+			            preparedStmt.close();
+
+			        }
+			        catch(SQLException e)
+			        {
+			           // logger.error("The result set cannot be closed.", e);
+			        }
+			    }if (preparedStmt1!=null)
+			    {
+			        try
+			        {
+			            preparedStmt1.close();
+
+			        }
+			        catch(SQLException e)
+			        {
+			           // logger.error("The result set cannot be closed.", e);
+			        }
+			    }if (stmt!=null)
+			    {
+			        try
+			        {
+			            stmt.close();
+
+			        }
+			        catch(SQLException e)
+			        {
+			           // logger.error("The result set cannot be closed.", e);
+			        }
+			    }if (stmt1!=null)
+			    {
+			        try
+			        {
+			            stmt1.close();
+
+			        }
+			        catch(SQLException e)
+			        {
+			           // logger.error("The result set cannot be closed.", e);
+			        }
+			    }
+			    if (con!=null)
+			    {
+			        try
+			        {
+			            con.close();
 
 			        }
 			        catch(SQLException e)
