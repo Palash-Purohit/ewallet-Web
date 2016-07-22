@@ -5,22 +5,22 @@
     <welcome-file>home.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <display-name>registercontoller</display-name>
-    <servlet-name>registercontoller</servlet-name>
-    <servlet-class>controller.registercontoller</servlet-class>
+    <display-name>RegisterContoller</display-name>
+    <servlet-name>RegisterContoller</servlet-name>
+    <servlet-class>controller.RegisterContoller</servlet-class>
   </servlet>
    <servlet-mapping>
-    <servlet-name>registercontoller</servlet-name>
-    <url-pattern>/registercontoller</url-pattern>
+    <servlet-name>RegisterContoller</servlet-name>
+    <url-pattern>/RegisterContoller</url-pattern>
   </servlet-mapping>
    <servlet>
-    <display-name>logincontroller</display-name>
-    <servlet-name>logincontroller</servlet-name>
-    <servlet-class>controller.logincontroller</servlet-class>
+    <display-name>LoginController</display-name>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>controller.LoginController</servlet-class>
   </servlet>
   <servlet-mapping>
-      <servlet-name>logincontroller</servlet-name>
-    <url-pattern>/logincontroller</url-pattern>
+      <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>

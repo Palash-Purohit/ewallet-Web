@@ -17,15 +17,15 @@ import service.Service;
 import java.util.Date;
 
 /**
- * Servlet implementation class registercontoller
+ * Servlet implementation class RegisterContoller
  */
-public class registercontoller extends HttpServlet {
+public class RegisterContoller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public registercontoller() {
+	public RegisterContoller() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

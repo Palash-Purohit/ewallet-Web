@@ -1,8 +1,6 @@
 package controller;
 
 import java.io.IOException;
-import java.sql.SQLException;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,66 +14,63 @@ import bean.BenBean;
  */
 public class Add extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public Add() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+	public Add() {
+		super();
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		
-		BenBean bean= new BenBean();
-		
-		
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 	
-		long mob=Long.parseLong(request.getParameter("mobile"));
-		
+
+		BenBean bean = new BenBean();
+
+		long mob = Long.parseLong(request.getParameter("mobile"));
+
 		bean.setMobile(mob);
 		System.out.println(mob);
 
-	
-		//String mob=request.getParameter("mobile");
-		//bean.setMobile(mob);
-		
-		
-		
-		String name= request.getParameter("name");
+		// String mob=request.getParameter("mobile");
+		// bean.setMobile(mob);
+
+		String name = request.getParameter("name");
 		System.out.println(name);
 		bean.setName(name);
-		
-		String email= request.getParameter("email");
+
+		String email = request.getParameter("email");
 		System.out.println(email);
 		bean.setEmail(email);
-		
+
 		// request.setAttribute("mobile", mob);
-		 request.setAttribute("name", name);
-		 request.setAttribute("email", email);
-		
-		 
-		 /* RequestDispatcher reqDispatcher = getServletConfig().getServletContext().getRequestDispatcher("javaPapers.jsp");
-	        reqDispatcher.forward(request,response);*/
-		 request.getRequestDispatcher("javaPapers.jsp").forward(request,response);
-		 
-		 
-		 BenService bs= new BenService();
-		
-			bs.addBeneficiary(bean);
-		
-		
+		request.setAttribute("name", name);
+		request.setAttribute("email", email);
+
+		/*
+		 * RequestDispatcher reqDispatcher =
+		 * getServletConfig().getServletContext().getRequestDispatcher(
+		 * "javaPapers.jsp"); reqDispatcher.forward(request,response);
+		 */
+		request.getRequestDispatcher("javaPapers.jsp").forward(request, response);
+
+		BenService bs = new BenService();
+
+		bs.addBeneficiary(bean);
+
 	}
 
 }

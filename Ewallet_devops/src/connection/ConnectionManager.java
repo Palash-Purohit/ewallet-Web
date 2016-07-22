@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 public class ConnectionManager {
 	static final String url = "jdbc:mysql://172.29.180.95:3306/wallet";
-
 	static final String dbUsername = "user";
 	static final String dbPassword = "password";
 	public static Connection getConnection (){
@@ -20,12 +19,8 @@ public class ConnectionManager {
 		e.printStackTrace();
 		}
 	catch (SQLException e1){
-		System.out.println("connection driver not found");
-		e1.printStackTrace();
+				e1.printStackTrace();
 		}
 		return conn;
 		}
 }
-	
-	
-

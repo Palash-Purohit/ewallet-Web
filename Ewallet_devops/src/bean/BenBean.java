@@ -4,14 +4,7 @@ public class BenBean {
 	private long mobile;
 	private String name;
 	private String email;
-	
-	/*private String mobile;
-	public String getMobile() {
-		return mobile;
-	}
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
-	}*/
+		
 	public long getMobile() {
 		return mobile;
 	}

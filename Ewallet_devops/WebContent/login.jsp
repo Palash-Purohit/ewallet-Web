@@ -71,7 +71,7 @@
     padding:5px;">Log In</h2>
 </div><br>
 <br>
-			<form class="form-signin" action="logincontroller" method="post">
+			<form class="form-signin" action="LoginController" method="post">
 			
 				<p  text-align: left;"> Fields marked with asterisk(<span style="color:red">*</span>) are compulsary Fields.
 					</p>

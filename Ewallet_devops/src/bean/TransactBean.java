@@ -1,14 +1,12 @@
 package bean;
 
-import java.math.BigInteger;
-
 public class TransactBean {
-	private String user_id;
+	private String userId;
 private Long umobile;
-private String b_name;
+private String benName;
 private Long mobile;
 private int amount;
-
+private String details;
 public Long getUmobile() {
 	return umobile;
 }
@@ -16,11 +14,11 @@ public void setUmobile(Long umobile) {
 	this.umobile = umobile;
 }
 
-public String getUser_id() {
-	return user_id;
+public String getuserId() {
+	return userId;
 }
-public void setUser_id(String uname) {
-	this.user_id = uname;
+public void setuserId(String uname) {
+	this.userId = uname;
 }
 public int getAmount() {
 	return amount;
@@ -28,13 +26,11 @@ public int getAmount() {
 public void setAmount(int amount) {
 	this.amount = amount;
 }
-private String transfer_detail;
-
-public String getB_name() {
-	return b_name;
+public String getbenName() {
+	return benName;
 }
-public void setB_name(String b_name) {
-	this.b_name = b_name;
+public void setbenName(String benName) {
+	this.benName = benName;
 }
 public Long getMobile() {
 	return mobile;
@@ -42,11 +38,11 @@ public Long getMobile() {
 public void setMobile(Long string) {
 	this.mobile = string;
 }
-public String getTransfer_detail() {
-	return transfer_detail;
+public String getdetails() {
+	return details;
 }
-public void setTransfer_detail(String transfer_detail) {
-	this.transfer_detail = transfer_detail;
+public void setdetails(String details) {
+	this.details = details;
 }
 
 }
