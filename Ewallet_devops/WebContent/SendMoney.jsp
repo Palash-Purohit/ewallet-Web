@@ -49,12 +49,7 @@
 				</div>
 				<!-- end of search -->
 				<div class="cl">&nbsp;</div>
-					<h4 align="right">
-					Welcome Home
-					<%=session.getAttribute("name")%></h4>
-				<h4 align="right">
-					Phone
-					<%=session.getAttribute("phone")%></h4>
+					
 				</header>
 				<!-- end of header -->
 				<!-- navigaation -->
