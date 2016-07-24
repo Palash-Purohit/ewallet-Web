@@ -82,12 +82,16 @@
 					<fieldset style="width: 60%; margin-left: 20%; border-radius: 8px">
 						<!-- <legend align="center">Send Money</legend> -->
 
-						<div>
+					<!-- 	<div>
 							<h2
-								style="background-color: #000000; color: white; text-align: center; padding: 5px;">Send
+								style="background-color: white; color: b; text-align: center; padding: 5px;">Transfer Money
 								Money</h2>
 						</div>
-						
+						 -->
+						 
+						 <h2
+								style="background-color: white; color: black; text-align: center; padding: 5px;">Transfer Money
+								Money</h2>
 
 							<p text-align:left;/>
 								Fields marked with asterisk(<span style="color: red">*</span>)
