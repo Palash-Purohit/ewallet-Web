@@ -49,16 +49,16 @@
 					<!-- end of search -->
 
 					<div class="cl">&nbsp;</div>
-					
-								<h4 align="right">
-					Welcome 
-					<%=session.getAttribute("name")%></h4>
-				<h4 align="right">
-					Phone
-					<%=session.getAttribute("phone")%></h4>
+
+					<h4 align="right">
+						Welcome
+						<%=session.getAttribute("name")%></h4>
+					<h4 align="right">
+						Phone
+						<%=session.getAttribute("phone")%></h4>
 					<p align="right">
-		<a href="loggedout.jsp">Log Out</a>
-	</p>
+						<a href="loggedout.jsp">Log Out</a>
+					</p>
 
 				</header>
 				<!-- end of header -->
@@ -82,29 +82,30 @@
 					</ul>
 					<div class="cl">&nbsp;</div>
 				</nav>
-				
-				
-				<div id="first"	>
 
-				
-					
-							<!-- <div>
+
+				<div id="first">
+
+
+
+					<!-- <div>
 								<h2
 									style="background-color: #000000; color: white; text-align: center; padding: 5px;"> Transfer
 									Money</h2>
 							</div>
 							 -->
-						
-
-
-	<a href="Add.jsp"><h3 align="center">ADD BENEFICIARY</h3></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="SendMoney.jsp"><h3 align="center">TRANSFER MONEY</h3></a>
 
 
 
-		</div>
-		
-		<div id="footer">
+					<a href="Add.jsp"><h3 align="center">ADD BENEFICIARY</h3></a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="SendMoney.jsp"><h3 align="center">TRANSFER MONEY</h3></a>
+
+
+
+				</div>
+
+				<div id="footer">
 					<div class="footer-nav">
 						<ul>
 
