@@ -42,6 +42,16 @@
 		</form>
 	</div>
 	<div class="cl">&nbsp;</div>
+	<h4 align="right">
+		Welcome
+		<%=session.getAttribute("name")%></h4>
+	<h4 align="right">
+		Phone
+		<%=session.getAttribute("phone")%></h4>
+	<p align="right">
+		<a href="loggedout.jsp">Log Out</a>
+	</p>
+	
 	</header>
 
 	<nav id="navigation"> <a
@@ -63,18 +73,53 @@
 
 
 	</nav>
+<div id="first">
 
 
-	<h4 align="right">
-		Welcome
-		<%=session.getAttribute("name")%></h4>
-	<h4 align="right">
-		Phone
-		<%=session.getAttribute("phone")%></h4>
-	<p align="right">
-		<a href="loggedout.jsp">Log Out</a>
-	</p>
 
+					<!-- <div>
+								<h2
+									style="background-color: #000000; color: white; text-align: center; padding: 5px;"> Transfer
+									Money</h2>
+							</div>
+							 -->
+
+
+
+					<a href="Add.jsp"><h3 align="center">ADD BENEFICIARY</h3></a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="SendMoney.jsp"><h3 align="center">TRANSFER MONEY</h3></a>
+
+
+
+				</div>
+						<div class="footer-nav">
+						<ul>
+
+							<li><a href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
+							<li><a href="${pageContext.request.contextPath}/aboutus.jsp">About
+									Us</a></li>
+							<li><a
+								href="${pageContext.request.contextPath}/policies.jsp">Policies</a></li>
+
+							<li><a
+								href="${pageContext.request.contextPath}/CorporatePortal.jsp">Corporate
+									Portal</a></li>
+							<li><a
+								href="${pageContext.request.contextPath}/contactus.jsp">Contact
+									Us</a></li>
+
+						</ul>
+						<div class="cl">&nbsp;</div>
+					</div>
+					<p class="copy">
+						&copy; Copyright 2016<span>|</span>Fast Track Policy. Design by
+						AHD_24 Aja113
+					</p>
+					<div class="cl">&nbsp;</div>
+				</div>
+
+	
 
 
 
