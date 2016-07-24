@@ -5,7 +5,7 @@
 
 <link rel="shortcut icon" type="image/x-icon"
 	href="retinafreestansard/css/images/favicon.png" />
-<title>e-WALLET</title>
+<title>add status</title>
 
 
 
