@@ -52,7 +52,7 @@ public class LoginController extends HttpServlet {
 			session.setAttribute("name", userlogin1.getFirst());
 			session.setAttribute("phone", userlogin1.getPhone());
 			session.setAttribute("password", userlogin.getPassword());
-			RequestDispatcher rd = request.getRequestDispatcher("ankita.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("LoginStatus.jsp");
 			rd.forward(request, response);
 		} else {
 			out.print("Incorrect username or password");
