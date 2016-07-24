@@ -79,7 +79,7 @@
 	</p>
 <div id="first">
 				<form action="Transaction" method="post" name="transact">
-					<fieldset style="width: 60%; margin-left: 20%; border-radius: 8px">
+				<!-- 	<fieldset style="width: 60%; margin-left: 20%; border-radius: 8px"> -->
 						<!-- <legend align="center">Send Money</legend> -->
 
 					<!-- 	<div>
@@ -137,7 +137,7 @@
 
 							</table>
 						
-					</fieldset>
+					<!-- </fieldset> -->
 				</form>
 			</div>
 
