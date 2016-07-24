@@ -8,7 +8,7 @@
 %>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
-<title>Registration</title>
+<title>Send Money</title>
 <script src="" type="text/javascript"></script>
 <link
 	href="${pageContext.request.contextPath}/retinafreestansard/css/form1.css"
@@ -72,6 +72,16 @@
 
 				</ul>
 				<div class="cl">&nbsp;</div>
+				</nav>
+				<h4 align="right">
+					Welcome 
+					<%=session.getAttribute("name")%></h4>
+				<h4 align="right">
+					Phone
+					<%=session.getAttribute("phone")%></h4>
+								<p align="right">
+		<a href="loggedout.jsp">Log Out</a>
+	</p>
 
 				<form action="Transaction" method="post" name="transact">
 					<fieldset style="width: 60%; margin-left: 20%; border-radius: 8px">
