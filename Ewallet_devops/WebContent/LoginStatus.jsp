@@ -44,13 +44,13 @@
 
 
 <body>
-<div id="wrapper">
+	<div id="wrapper">
 		<!-- shell -->
 		<div class="shell">
 			<!-- container -->
 			<div class="container">
 
-			
+
 				<!-- header -->
 
 
@@ -75,94 +75,90 @@
 				</div>
 				<!-- end of search -->
 				<div class="cl">&nbsp;</div>
-	
+
 				</header>
-					<h4 align="right">
-					Welcome 
+
+
+				<!-- 	<div id="all"> -->
+
+				<!-- <div id="header"></div> -->
+
+
+				<nav id="navigation"> <a href="#" class="nav-btn">HOME<span></span></a>
+				<ul>
+					<li><a href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
+					<li><a href="${pageContext.request.contextPath}/aboutus.jsp">About
+							Us</a></li>
+					<li><a href="${pageContext.request.contextPath}/SendMoney.jsp">Transfer
+							Money</a></li>
+					<li><a href="${pageContext.request.contextPath}/contactus.jsp">Contact
+							Us</a></li>
+
+				</ul>
+
+
+				<div class="cl">&nbsp;</div>
+				</nav>
+
+				<h4 align="right">
+					Welcome
 					<%=session.getAttribute("name")%></h4>
 				<h4 align="right">
 					Phone
 					<%=session.getAttribute("phone")%></h4>
-					<p align="right">
-		<a href="loggedout.jsp">Log Out</a>
-	</p>
-
-			<!-- 	<div id="all"> -->
-
-					<!-- <div id="header"></div> -->
+				<p align="right">
+					<a href="loggedout.jsp">Log Out</a>
+				</p>
 
 
-					<nav id="navigation"> 
-					<a href="#" class="nav-btn">HOME<span></span></a>
-					<ul>
-						<li><a href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
-						<li><a href="${pageContext.request.contextPath}/aboutus.jsp">About
-								Us</a></li>
-						<li><a
-							href="${pageContext.request.contextPath}/SendMoney.jsp">Transfer
-								Money</a></li>
-						<li><a
-							href="${pageContext.request.contextPath}/contactus.jsp">Contact
-								Us</a></li>
-
-					</ul>
-					
-					
-					<div class="cl">&nbsp;</div>
-</nav>
+				<div id="first">
 
 
 
-
-<div id="first"	>
-
-				
-					
-							<!-- <div>
+					<!-- <div>
 								<h2
 									style="background-color: #000000; color: white; text-align: center; padding: 5px;"> Transfer
 									Money</h2>
 							</div>
 							 -->
-						
-
-
-	<a href="Add.jsp"><h3 align="center">ADD BENEFICIARY</h3></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="SendMoney.jsp"><h3 align="center">TRANSFER MONEY</h3></a>
 
 
 
-		</div>		
-			
-					<div id="footer">
-						<div class="footer-nav">
-							<ul>
+					<a href="Add.jsp"><h3 align="center">ADD BENEFICIARY</h3></a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="SendMoney.jsp"><h3 align="center">TRANSFER MONEY</h3></a>
 
-								<li><a href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
-								<li><a
-									href="${pageContext.request.contextPath}/aboutus.jsp">About
-										Us</a></li>
-								<li><a
-									href="${pageContext.request.contextPath}/policies.jsp">Transfer
-										Money</a></li>
-								<li><a
-									href="${pageContext.request.contextPath}/contactus.jsp">Contact
-										Us</a></li>
-							</ul>
-							<div class="cl">&nbsp;</div>
-						</div>
-						<p class="copy">
-							&copy; Copyright 2016<span>|</span>e-Wallet. Design by
-							DevOps_Team
-						</p>
+
+
+				</div>
+
+				<div id="footer">
+					<div class="footer-nav">
+						<ul>
+
+							<li><a href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
+							<li><a href="${pageContext.request.contextPath}/aboutus.jsp">About
+									Us</a></li>
+							<li><a
+								href="${pageContext.request.contextPath}/policies.jsp">Transfer
+									Money</a></li>
+							<li><a
+								href="${pageContext.request.contextPath}/contactus.jsp">Contact
+									Us</a></li>
+						</ul>
 						<div class="cl">&nbsp;</div>
 					</div>
-					<!-- end of footer -->
+					<p class="copy">
+						&copy; Copyright 2016<span>|</span>e-Wallet. Design by DevOps_Team
+					</p>
+					<div class="cl">&nbsp;</div>
 				</div>
-				<!-- end of container -->
+				<!-- end of footer -->
 			</div>
-			<!-- end of shell -->
+			<!-- end of container -->
 		</div>
-		
+		<!-- end of shell -->
+	</div>
+
 </body>
 </html>
