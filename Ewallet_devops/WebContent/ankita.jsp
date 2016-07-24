@@ -7,8 +7,20 @@
 	HttpSession session1 = request.getSession(false);
 %>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<link rel="shortcut icon" type="image/x-icon"
+	href="retinafreestansard/css/images/favicon.png" />
+<title>e-WALLET</title>
+<link rel="shortcut icon" type="image/x-icon"
+	href="${pageContext.request.contextPath}/retinafreestansard/css/images/favicon.png" />
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/retinafreestansard/css/style.css"
+	type="text/css" media="all" />
+<link
+	href="${pageContext.request.contextPath}/retinafreestansard/css/form1.css"
+	rel="stylesheet">
 </head>
+
+
 <body>
 
 
@@ -22,13 +34,13 @@
 
 	</div>
 	<div class="search">
-					<form action="" method="post">
-						<input type="text" class="field" value="keywords here ..."
-							title="keywords here ..." /> <input type="submit"
-							class="search-btn" value="" />
-						<div class="cl">&nbsp;</div>
-					</form>
-				</div>
+		<form action="" method="post">
+			<input type="text" class="field" value="keywords here ..."
+				title="keywords here ..." /> <input type="submit"
+				class="search-btn" value="" />
+			<div class="cl">&nbsp;</div>
+		</form>
+	</div>
 	<div class="cl">&nbsp;</div>
 	</header>
 
@@ -53,15 +65,15 @@
 	</nav>
 
 
-<h4 align="right">
-						Welcome
-						<%=session.getAttribute("name")%></h4>
-					<h4 align="right">
-						Phone
-						<%=session.getAttribute("phone")%></h4>
-					<p align="right">
-						<a href="loggedout.jsp">Log Out</a>
-					</p>
+	<h4 align="right">
+		Welcome
+		<%=session.getAttribute("name")%></h4>
+	<h4 align="right">
+		Phone
+		<%=session.getAttribute("phone")%></h4>
+	<p align="right">
+		<a href="loggedout.jsp">Log Out</a>
+	</p>
 
 
 
