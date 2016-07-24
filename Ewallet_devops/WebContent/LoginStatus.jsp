@@ -44,6 +44,11 @@
 
 
 <body>
+<div id="wrapper">
+		<!-- shell -->
+		<div class="shell">
+			<!-- container -->
+			<div class="container">
 
 			<h4 align="right">
 					Welcome 
@@ -58,11 +63,7 @@
 
 
 
-	<div id="wrapper">
-		<!-- shell -->
-		<div class="shell">
-			<!-- container -->
-			<div class="container">
+	
 				<!-- header -->
 
 
