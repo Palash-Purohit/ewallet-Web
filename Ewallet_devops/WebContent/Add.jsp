@@ -114,15 +114,15 @@
 <div id="first">
 
 					<form action="Add" name="register" method="post">
-						<fieldset
-							style="width: 80%; height: 65%; margin-left: 20%; border-radius: 8px">
+						<!-- <fieldset
+							style="width: 80%; height: 65%; margin-left: 20%; border-radius: 8px"> -->
 
-							<!-- <div>
+							<div>
 								<h2
 									style="background-color: #000000; color: white; text-align: center; padding: 5px;">Send
 									Money</h2>
 							</div>
-							 -->
+							
 
 
 
@@ -170,7 +170,7 @@
 
 
 								</table>
-						</fieldset>
+						<!-- </fieldset> -->
 					</form></div>
 					<div id="footer">
 						<div class="footer-nav">
