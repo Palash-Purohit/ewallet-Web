@@ -50,20 +50,7 @@
 			<!-- container -->
 			<div class="container">
 
-			<h4 align="right">
-					Welcome 
-					<%=session.getAttribute("name")%></h4>
-				<h4 align="right">
-					Phone
-					<%=session.getAttribute("phone")%></h4>
-					<p align="right">
-		<a href="loggedout.jsp">Log Out</a>
-	</p>
-
-
-
-
-	
+			
 				<!-- header -->
 
 
@@ -90,6 +77,15 @@
 				<div class="cl">&nbsp;</div>
 	
 				</header>
+					<h4 align="right">
+					Welcome 
+					<%=session.getAttribute("name")%></h4>
+				<h4 align="right">
+					Phone
+					<%=session.getAttribute("phone")%></h4>
+					<p align="right">
+		<a href="loggedout.jsp">Log Out</a>
+	</p>
 
 			<!-- 	<div id="all"> -->
 
