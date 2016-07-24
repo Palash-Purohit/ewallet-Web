@@ -74,15 +74,7 @@
 				</div>
 				<!-- end of search -->
 				<div class="cl">&nbsp;</div>
-				<h4 align="right">
-					Welcome 
-					<%=session.getAttribute("name")%></h4>
-				<h4 align="right">
-					Phone
-					<%=session.getAttribute("phone")%></h4>
-								<p align="right">
-		<a href="loggedout.jsp">Log Out</a>
-	</p>
+				<
 				</header>
 
 				<!-- <div id="all"> -->
@@ -108,6 +100,15 @@
 
 
 </nav>
+h4 align="right">
+					Welcome 
+					<%=session.getAttribute("name")%></h4>
+				<h4 align="right">
+					Phone
+					<%=session.getAttribute("phone")%></h4>
+								<p align="right">
+		<a href="loggedout.jsp">Log Out</a>
+	</p>
 
 
 <div id="first">
