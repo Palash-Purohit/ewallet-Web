@@ -77,7 +77,7 @@
 								<p align="right">
 		<a href="loggedout.jsp">Log Out</a>
 	</p>
-
+<div id="first">
 				<form action="Transaction" method="post" name="transact">
 					<fieldset style="width: 60%; margin-left: 20%; border-radius: 8px">
 						<!-- <legend align="center">Send Money</legend> -->
@@ -87,7 +87,7 @@
 								style="background-color: #000000; color: white; text-align: center; padding: 5px;">Send
 								Money</h2>
 						</div>
-						<div id="first">
+						
 
 							<p text-align:left;/>
 								Fields marked with asterisk(<span style="color: red">*</span>)
@@ -132,7 +132,7 @@
 								</tr>
 
 							</table>
-						</div>
+						
 					</fieldset>
 				</form>
 			</div>
