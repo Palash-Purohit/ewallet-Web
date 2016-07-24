@@ -79,23 +79,17 @@
 
 
 				<nav id="navigation"> <a
-					href="${pageContext.request.contextPath}/home.jsp"
-					class="nav-btn">HOME<span></span></a>
+					href="${pageContext.request.contextPath}/home.jsp" class="nav-btn">HOME<span></span></a>
 				<ul>
 
-					<li><a
-						href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
-					<li><a
-						href="${pageContext.request.contextPath}/aboutus.jsp">About
+					<li><a href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
+					<li><a href="${pageContext.request.contextPath}/aboutus.jsp">About
 							Us</a></li>
-					<li><a
-						href="${pageContext.request.contextPath}/policies.jsp">Transfer
+					<li><a href="${pageContext.request.contextPath}/policies.jsp">Transfer
 							Money</a></li>
-					<li><a
-						href="${pageContext.request.contextPath}/contactus.jsp">Contact
+					<li><a href="${pageContext.request.contextPath}/contactus.jsp">Contact
 							Us</a></li>
-					<li><a
-						href="${pageContext.request.contextPath}/login.jsp">Login</a></li>
+					<li><a href="${pageContext.request.contextPath}/login.jsp">Login</a></li>
 
 
 				</ul>
@@ -197,8 +191,7 @@
 						<h4>
 							We make our customer's problems our <strong>problems</strong>
 						</h4>
-						<a
-							href="${pageContext.request.contextPath}/New_Registration.jsp"
+						<a href="${pageContext.request.contextPath}/New_Registration.jsp"
 							class="blue-btn">Register Here</a>
 					</div>
 
@@ -224,8 +217,7 @@
 							can't see the real value of you, it's time for a new start.</h5>
 						<div class="cl">&nbsp;</div>
 						<p>
-							<a
-								href="${pageContext.request.contextPath}/CorporatePortal.jsp">
+							<a href="${pageContext.request.contextPath}/CorporatePortal.jsp">
 								Apply Here</a>
 						</p>
 					</div>
@@ -310,10 +302,8 @@
 					<div class="footer-nav">
 						<ul>
 
-							<li><a
-								href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
-							<li><a
-								href="${pageContext.request.contextPath}/aboutus.jsp">About
+							<li><a href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
+							<li><a href="${pageContext.request.contextPath}/aboutus.jsp">About
 									Us</a></li>
 							<li><a
 								href="${pageContext.request.contextPath}/policies.jsp">Transfer
