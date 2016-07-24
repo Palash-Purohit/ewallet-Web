@@ -15,22 +15,22 @@ public class TransactDao {
 	public int sendMoney(TransactBean tb1) {
 		System.out.println(tb1.getAmount());
 		Connection con = null;
-				Statement stmt = null;
-		Statement stmt1= null;
+		Statement stmt = null;
+		Statement stmt1 = null;
 		PreparedStatement preparedStmt = null;
-		PreparedStatement preparedStmt1 =null;
-		ResultSet rs =null;
-		ResultSet rs1 =null;
+		PreparedStatement preparedStmt1 = null;
+		ResultSet rs = null;
+		ResultSet rs1 = null;
 		try {
 			int flag;
 			con = ConnectionManager.getConnection();
 			stmt = con.createStatement();
 			stmt1 = con.createStatement();
 			String query = "update user set amount = ? where phone = ?";
-			 preparedStmt = con.prepareStatement(query);
+			preparedStmt = con.prepareStatement(query);
 			preparedStmt1 = con.prepareStatement(query);
 			System.out.println(tb1.getUmobile());
-			rs= stmt.executeQuery("select * from user where phone=" + tb1.getUmobile() + ";");
+			rs = stmt.executeQuery("select * from user where phone=" + tb1.getUmobile() + ";");
 			rs1 = stmt1.executeQuery("select * from user where phone=" + tb1.getMobile() + ";");
 			if (!rs.next()) {
 				System.out.println("no data");
@@ -92,87 +92,63 @@ public class TransactDao {
 			return 1;
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}
-		finally{
-			 if (rs!=null)
-			    {
-			        try
-			        {
-			            rs.close();
+		} finally {
+			if (rs != null) {
+				try {
+					rs.close();
 
-			        }
-			        catch(SQLException e)
-			        {
-			           // logger.error("The result set cannot be closed.", e);
-			        }
-			    }if (rs1!=null)
-			    {
-			        try
-			        {
-			            rs1.close();
+				} catch (SQLException e) {
 
-			        }
-			        catch(SQLException e)
-			        {
-			           // logger.error("The result set cannot be closed.", e);
-			        }
-			    }if (preparedStmt!=null)
-			    {
-			        try
-			        {
-			            preparedStmt.close();
+				}
+			}
+			if (rs1 != null) {
+				try {
+					rs1.close();
 
-			        }
-			        catch(SQLException e)
-			        {
-			           // logger.error("The result set cannot be closed.", e);
-			        }
-			    }if (preparedStmt1!=null)
-			    {
-			        try
-			        {
-			            preparedStmt1.close();
+				} catch (SQLException e) {
 
-			        }
-			        catch(SQLException e)
-			        {
-			           // logger.error("The result set cannot be closed.", e);
-			        }
-			    }if (stmt!=null)
-			    {
-			        try
-			        {
-			            stmt.close();
+				}
+			}
+			if (preparedStmt != null) {
+				try {
+					preparedStmt.close();
 
-			        }
-			        catch(SQLException e)
-			        {
-			           // logger.error("The result set cannot be closed.", e);
-			        }
-			    }if (stmt1!=null)
-			    {
-			        try
-			        {
-			            stmt1.close();
+				} catch (SQLException e) {
 
-			        }
-			        catch(SQLException e)
-			        {
-			           // logger.error("The result set cannot be closed.", e);
-			        }
-			    }
-			    if (con!=null)
-			    {
-			        try
-			        {
-			            con.close();
+				}
+			}
+			if (preparedStmt1 != null) {
+				try {
+					preparedStmt1.close();
 
-			        }
-			        catch(SQLException e)
-			        {
-			           // logger.error("The result set cannot be closed.", e);
-			        }
-			    }
+				} catch (SQLException e) {
+
+				}
+			}
+			if (stmt != null) {
+				try {
+					stmt.close();
+
+				} catch (SQLException e) {
+
+				}
+			}
+			if (stmt1 != null) {
+				try {
+					stmt1.close();
+
+				} catch (SQLException e) {
+
+				}
+			}
+			if (con != null) {
+				try {
+					con.close();
+
+				} catch (SQLException e) {
+
+				}
+			}
 		}
 		/*
 		 * String query="UPDATE user SET amount="+value, column2=value2,...
