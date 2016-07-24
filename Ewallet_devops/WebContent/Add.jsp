@@ -74,7 +74,7 @@
 				</div>
 				<!-- end of search -->
 				<div class="cl">&nbsp;</div>
-				<
+				
 				</header>
 
 				<!-- <div id="all"> -->
@@ -100,7 +100,7 @@
 
 
 </nav>
-h4 align="right">
+<h4 align="right">
 					Welcome 
 					<%=session.getAttribute("name")%></h4>
 				<h4 align="right">
