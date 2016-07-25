@@ -116,17 +116,17 @@
 									<td><label>Beneficiary Mobile No:<sup
 											style="color: red">*</sup></label></td>
 									<td><input type="Number" placeholder="Mobile Number"
-										name="mobile" id="mobile" required /></td>
+										name="mobile" id="mobilenumber" required /></td>
 								</tr>
 								<tr>
 									<td><label>Amount:<sup style="color: red">*</sup></label></td>
 									<td><input type="number" placeholder="Amount"
-										name="amount" id="mobile" /></td>
+										name="amount" id="amount" /></td>
 								</tr>
 
 								<tr>
 									<td><label>Transfer Details:</label></td>
-									<td><input type="text" name="detail" id="firstname"
+									<td><input type="text" name="detail" id="transfer"
 										placeholder="Details" /></td>
 								</tr>
 								<tr>

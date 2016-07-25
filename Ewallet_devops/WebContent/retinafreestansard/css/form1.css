@@ -113,7 +113,7 @@ border-radius:5px;
 -moz-border-radius:5px
 /* For Mozilla Web Browser */
 }
-input#children{
+input#amount{
 background-image:url(../images/icon_name.png);
 background-repeat:no-repeat;
 background-position:6px;
@@ -135,7 +135,7 @@ border-radius:5px;
 -moz-border-radius:5px
 /* For Mozilla Web Browser */
 }
-input#status{
+input#transfer{
 background-image:url(../images/icon_name.png);
 background-repeat:no-repeat;
 background-position:6px;
@@ -201,7 +201,7 @@ border-radius:5px;
 -moz-border-radius:5px
 /* For Mozilla Web Browser */
 }
-input#landline{
+input#mobilenumber{
 background-image:url(../images/icon_name.png);
 background-repeat:no-repeat;
 background-position:6px;
@@ -291,72 +291,8 @@ border-radius:5px;
 -moz-border-radius:5px
 /* For Mozilla Web Browser */
 }
-input#occupation{
-background-image:url(../images/icon_name.png);
-background-repeat:no-repeat;
-background-position:6px;
-border:1px solid #DADADA;
-margin-top:10px;
-margin-bottom:10px;
-padding-left:35px;
-width:310px;
-height:30px;
-font-size:14px;
-box-shadow:0 0 10px;
--webkit-box-shadow:0 0 10px;
-/* For I.E */
--moz-box-shadow:0 0 10px;
-/* For Mozilla Web Browser */
-border-radius:5px;
--webkit-border-radius:5px;
-/* For I.E */
--moz-border-radius:5px
-/* For Mozilla Web Browser */
-}
-input#annualsalary{
-background-image:url(../images/icon_name.png);
-background-repeat:no-repeat;
-background-position:6px;
-border:1px solid #DADADA;
-margin-top:10px;
-margin-bottom:10px;
-padding-left:35px;
-width:310px;
-height:30px;
-font-size:14px;
-box-shadow:0 0 10px;
--webkit-box-shadow:0 0 10px;
-/* For I.E */
--moz-box-shadow:0 0 10px;
-/* For Mozilla Web Browser */
-border-radius:5px;
--webkit-border-radius:5px;
-/* For I.E */
--moz-border-radius:5px
-/* For Mozilla Web Browser */
-}
-input#pan{
-background-image:url(../images/icon_name.png);
-background-repeat:no-repeat;
-background-position:6px;
-border:1px solid #DADADA;
-margin-top:10px;
-margin-bottom:10px;
-padding-left:35px;
-width:310px;
-height:30px;
-font-size:14px;
-box-shadow:0 0 10px;
--webkit-box-shadow:0 0 10px;
-/* For I.E */
--moz-box-shadow:0 0 10px;
-/* For Mozilla Web Browser */
-border-radius:5px;
--webkit-border-radius:5px;
-/* For I.E */
--moz-border-radius:5px
-/* For Mozilla Web Browser */
-}
+
+
 input#pincode{
 background-image:url(../images/icon_name.png);
 background-repeat:no-repeat;
@@ -379,28 +315,7 @@ border-radius:5px;
 -moz-border-radius:5px
 /* For Mozilla Web Browser */
 }
-input#state{
-background-image:url(../images/icon_name.png);
-background-repeat:no-repeat;
-background-position:6px;
-border:1px solid #DADADA;
-margin-top:10px;
-margin-bottom:10px;
-padding-left:35px;
-width:310px;
-height:30px;
-font-size:14px;
-box-shadow:0 0 10px;
--webkit-box-shadow:0 0 10px;
-/* For I.E */
--moz-box-shadow:0 0 10px;
-/* For Mozilla Web Browser */
-border-radius:5px;
--webkit-border-radius:5px;
-/* For I.E */
--moz-border-radius:5px
-/* For Mozilla Web Browser */
-}
+
 input#fileChooser{
 background-image:url(../images/icon_name.png);
 background-repeat:no-repeat;
@@ -423,50 +338,8 @@ border-radius:5px;
 -moz-border-radius:5px
 /* For Mozilla Web Browser */
 }
-input#referenceby{
-background-image:url(../images/icon_name.png);
-background-repeat:no-repeat;
-background-position:6px;
-border:1px solid #DADADA;
-margin-top:10px;
-margin-bottom:10px;
-padding-left:35px;
-width:310px;
-height:30px;
-font-size:14px;
-box-shadow:0 0 10px;
--webkit-box-shadow:0 0 10px;
-/* For I.E */
--moz-box-shadow:0 0 10px;
-/* For Mozilla Web Browser */
-border-radius:5px;
--webkit-border-radius:5px;
-/* For I.E */
--moz-border-radius:5px
-/* For Mozilla Web Browser */
-}
-input#yoe{
-background-image:url(../images/icon_name.png);
-background-repeat:no-repeat;
-background-position:6px;
-border:1px solid #DADADA;
-margin-top:10px;
-margin-bottom:10px;
-padding-left:35px;
-width:310px;
-height:30px;
-font-size:14px;
-box-shadow:0 0 10px;
--webkit-box-shadow:0 0 10px;
-/* For I.E */
--moz-box-shadow:0 0 10px;
-/* For Mozilla Web Browser */
-border-radius:5px;
--webkit-border-radius:5px;
-/* For I.E */
--moz-border-radius:5px
-/* For Mozilla Web Browser */
-}
+
+
 input#password{
 background-image:url(../images/icon_name.png);
 background-repeat:no-repeat;
