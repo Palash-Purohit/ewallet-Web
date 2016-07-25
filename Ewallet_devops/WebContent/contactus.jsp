@@ -103,19 +103,19 @@
     padding:15px;">Contact Us</h1>
 </div>
 <form style=" margin: 100px;">
- <p> <img src="css/images/phone.png" alt="E_Wallet" height="70" width="70" align="left">
+ <p> <img src="retinafreestansard/css/images/phone.png" alt="E_Wallet" height="70" width="70" align="left">
   <p style="color:black;">You can contact us 24 hours a day, 7 days a week<br> call: 1-800-274-4499, 1-800-274-4498, 1-800-274-4497(Toll Free)<br>Mob:+91-8867987678,+91-8867987676</p><br><br><br>
-<p><img src="css/images/gmail1.png" alt="E_Wallet" height="70" width="70" align="left"></p><br>
+<p><img src="retinafreestansard/css/images/gmail1.png" alt="E_Wallet" height="70" width="70" align="left"></p><br>
 <p style="color:black;"> e_wallet.customercare@gmail.com</p>
 <p style="color:black;">e_wallet.services@gmail.com</p><br><br>
-<img src="css/images/facebook1.png" alt="E_Wallet" height="70" width="70" align="left" >
+<img src="retinafreestansard/css/images/facebook1.png" alt="E_Wallet" height="70" width="70" align="left" >
 <p style="color:black;"> https://www.facebook.com/E_Wallet </p>
 <p style="color:black;"> https://www.facebook.com/E_Wallet</p><br><br><br>
-<img src="css/images/linkedin.png" alt="E_Wallet" height="70" width="70" align="left"><br>
+<img src="retinafreestansard/css/images/linkedin.png" alt="E_Wallet" height="70" width="70" align="left"><br>
 <p style="color:black;">http://www.linkedin.com/in/E_Wallet</p>
 <p style="color:black;">http://www.linkedin.com/in/E_Wallet</p><br><br><br>
 
-<img src="css/images/twitter1.png" alt="E_Wallet" height="70" width="70" align="left"><br>
+<img src="retinafreestansard/css/images/twitter1.png" alt="E_Wallet" height="70" width="70" align="left"><br>
 <p style="color:black;"> Customercare@E_Wallet</p>
 <p style="color:black;"> Services@E_Wallet </p><br><br>
 </form>
