@@ -18,7 +18,9 @@
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/retinafreestansard/css/style.css"
 	type="text/css" media="all" />
+<script  src="${pageContext.request.contextPath}/doc.js" type="text/javascript" lnaguage="javascript">
 
+</script>
 </head>
 <body>
 	<!-- wrapper -->
@@ -132,7 +134,7 @@
 								<tr>
 									<td></td>
 									<td><a href="LoginStatus.jsp">Back</a><input type="submit" value="Send"
-										id="submit" style="float: right;"></td>
+										id="submit" onclick="return validateSendMoneyForm()" style="float: right;"></td>
 								</tr>
 
 							</table>
