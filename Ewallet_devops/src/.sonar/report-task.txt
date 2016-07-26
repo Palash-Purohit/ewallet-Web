@@ -1,5 +1,5 @@
 projectKey=Ewallet_devops
 serverUrl=http://localhost:9000
 dashboardUrl=http://localhost:9000/dashboard/index/Ewallet_devops
-ceTaskId=AVYb_vDgeeLr6PssIy6e
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AVYb_vDgeeLr6PssIy6e
+ceTaskId=AVYmvhtBVG8-z63Jo7vv
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVYmvhtBVG8-z63Jo7vv
