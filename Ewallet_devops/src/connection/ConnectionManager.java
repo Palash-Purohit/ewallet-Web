@@ -4,9 +4,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 public class ConnectionManager {
-	static final String url = "jdbc:mysql://172.29.180.95:3306/wallet";
+
+	static final String url = "jdbc:mysql://172.29.180.136:3306/wallet";
 	static final String dbUsername = "root";
 	static final String dbPassword = "";
+
 	public static Connection getConnection (){
 	Connection conn = null;
 	try {

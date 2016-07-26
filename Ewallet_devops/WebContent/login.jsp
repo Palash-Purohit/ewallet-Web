@@ -17,6 +17,9 @@
 <link
 	href="${pageContext.request.contextPath}/retinafreestansard/css/form1.css"
 	rel="stylesheet">
+	<script  src="${pageContext.request.contextPath}/doc.js" type="text/javascript" lnaguage="javascript">
+
+</script>
 </head>
 <body>
 	<!-- wrapper -->
@@ -109,7 +112,7 @@
 							</tr>
 							<tr>
 								<td></td>
-								<td><input type="submit" value="Log In" id="submit" /></td>
+								<td><input type="submit" value="Log In" id="submit" onclick="return validateForm()"/></td>
 							</tr>
 
 
