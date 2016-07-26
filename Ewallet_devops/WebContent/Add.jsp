@@ -36,9 +36,9 @@
 	type="text/javascript"></script>
 <script src="js/functions.js" type="text/javascript"></script>
 
-<!--[if lt IE 9]>
-		<script src="js/modernizr.custom.js"></script>
-	<![endif]-->
+<script  src="${pageContext.request.contextPath}/doc.js" type="text/javascript" lnaguage="javascript">
+
+</script>
 
 
 </head>
@@ -165,7 +165,7 @@
 									<tr>
 										<td></td>
 										<td><a href="">Back</a><input type="submit"
-											value="Sign Up" onclick="return validateForm()" id="submit" /></td>
+											value="Sign Up" onclick="return validateAddForm()" id="submit" /></td>
 									</tr>
 
 

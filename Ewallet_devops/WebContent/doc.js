@@ -1,83 +1,9 @@
+//login form validation
 
 function validateForm()
 {
-     var f = document.getElementById("firstname").value;
-     if(f == "")
-    	 {
-	alert("Enter first name");
-	return false;
-    	}
-     
-     rz=/^[A-Za-z]+$/;
- 	if(!(rz.test(f)))
- 	{
- 		flag=false;
- 		alert("First name should contain characters only");
- 		document.getElementById("firstname").value = "";
- 	}
- 	if(f.length>20)
- 		{
- 		alert("Please enter less than 20 characters");
- 		return false;
- 		}
-     
-     // validate last name
-     var l = document.getElementById("lastname").value;
-     if(l == "")
-    	 {
-	alert("Enter last name");
-	return false;
-    	 }
-     
-     rz=/^[A-Za-z]+$/;
-  	if(!(rz.test(l)))
-  	{
-  		flag=false;
-  		alert("First name should contain characters only");
-  		document.getElementById("firstname").value = "";
-  	}
-  	if(l.length>20)
-		{
-		alert("Please enter less than 20 characters");
-		return false;
-		}
-  	
-  //Validate DOB
-	/*var dob=document.getElementById("dateofbirth");
-	if(dob == null || dob =="" || dob == " ")
-	{
-		alert("Please select the Date of Birth!");
-		return false;
-	}*/
-	
-	//Validate Address 
-	var h =document.getElementById("address");
-	if(h == null || h == "" || h == " ")
-	{
-		alert("Please enter the address !");
-		return false;
-	}
-	
-	// validate email id
-	
-	var e= document.getElementById("email").value;
-	if(e == null || e == "" || e == " ")
-	{
-		alert("Please enter the email id !");
-		return false;
-	}
-	
-	var atpos=e.indexOf("@");
-	var dotpos=e.lastIndexOf(".");
-	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=e.length)
-	{
-		alert("Email Id should be of the form abc@xyz.com");
-		document.getElementById("email").value = "";
-		return false;
-	}	
-
-	//validate contact no.
-	var c = document.getElementById("mobile").value;
+	// validate contact no.
+	var c = document.getElementById("firstname").value;
 	if(c == null || c == "" || c == " ")
 	{
 		alert("Please enter the contactNo !");
@@ -95,29 +21,37 @@ function validateForm()
 	  		alert("First name should contain numbers only");
 	  		document.getElementById("mobile").value = "";
 	  	}
-		
-	//experience validation
-	var k =document.getElementById("yoe");
-	if(k == null || k == "" || k == " ")
-	{
-		alert("Please enter year of experiance.");
-		return false;
-	}
-	//validate pan no.
-	
-    var r = document.getElementById("pan").value;
-		if(r=="")
-			{
-			alert("Enter pan card no.");
-			return false;
-			}
+
 }
+// beneficiary addition form validation
 
-
-//customer form validation 
-
-function validateCustomerForm()
+function validateAddrForm()
 {
+	
+	// validate contact no.
+	var c = document.getElementById("firstname").value;
+	if(c == null || c == "" || c == " ")
+	{
+		alert("Please enter the contactNo !");
+		return false;
+	}
+	if(c.length!=10)
+		{
+		alert("Please enter 10 digit correct mobile no.");
+		}
+	 rz=/^[0-9]+$/;
+	
+	  	if(!(rz.test(c)))
+	  	{
+	  		flag=false;
+	  		alert("First name should contain numbers only");
+	  		document.getElementById("mobile").value = "";
+	  	}
+
+
+// validation of beneficiary name
+
+
      var f = document.getElementById("firstname").value;
      if(f == "")
     	 {
@@ -159,15 +93,14 @@ function validateCustomerForm()
 		return false;
 		}
   	
-  //Validate DOB
-	/*var dob=document.getElementById("dateofbirth").Value;
-	if(dob == null || dob =="" || dob == " ")
-	{
-		alert("Please select the Date of Birth!");
-		return false;
-	}*/
+  // Validate DOB
+	/*
+	 * var dob=document.getElementById("dateofbirth").Value; if(dob == null ||
+	 * dob =="" || dob == " ") { alert("Please select the Date of Birth!");
+	 * return false; }
+	 */
 	
-	//Validate Address 
+	// Validate Address
 	var h =document.getElementById("address");
 	if(h == null || h == "" || h == " ")
 	{
@@ -193,7 +126,7 @@ function validateCustomerForm()
 		return false;
 	}	
 
-	//validate contact no.
+	// validate contact no.
 	var c = document.getElementById("mobile").value;
 	if(c == null || c == "" || c == " ")
 	{
@@ -212,7 +145,7 @@ function validateCustomerForm()
 	  		alert("First name should contain numbers only");
 	  		document.getElementById("mobile").value = "";
 	  	}
-	  	//city validation
+	  	// city validation
 	  	 var s = document.getElementById("city").value;
 	     if(s == "")
 	    	 {
@@ -307,7 +240,7 @@ function validateCustomerForm()
 		  	        }
 		  	    }
 		  	}
-//manager validation 
+// manager validation
 function validateManagerForm(){
 	 var f = document.getElementById("firstname").value;
      if(f == "")
@@ -350,7 +283,7 @@ function validateManagerForm(){
 		return false;
 		}
 	
-    //Validate DOB
+    // Validate DOB
   	var dob=document.getElementById("dateofbirth");
   	if(dob == null || dob =="" || dob == " ")
   	{
@@ -381,19 +314,7 @@ function validateManagerForm(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-//same address 
+// same address
 function sameaddress(form){
 
 	if(form.copyaddress.checked){
@@ -413,5 +334,5 @@ function sameaddress(form){
 	     form.pcity.value = "";
 	     form.ppinCode.value = "";
 	}
-	}
-		
+}
+	
