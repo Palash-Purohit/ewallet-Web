@@ -85,7 +85,7 @@
 					<li><a href="${pageContext.request.contextPath}/home.jsp">Home</a></li>
 					<li><a href="${pageContext.request.contextPath}/aboutus.jsp">About
 							Us</a></li>
-					<li><a href="${pageContext.request.contextPath}/policies.jsp">Transfer
+					<li><a href="${pageContext.request.contextPath}/login.jsp">Transfer
 							Money</a></li>
 					<li><a href="${pageContext.request.contextPath}/contactus.jsp">Contact
 							Us</a></li>
