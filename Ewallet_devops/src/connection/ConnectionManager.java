@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 public class ConnectionManager {
 
-	static final String url = "jdbc:mysql://172.29.180.136:3306/wallet";
+	static final String url = "jdbc:mysql://172.29.180.139:3306/wallet";
 	static final String dbUsername = "root";
 	static final String dbPassword = "";
 
