@@ -162,3 +162,70 @@ function validateSendMoneyForm(){
 }
 
 
+
+//validation of registration form name
+
+function validateRegistrationForm()
+{
+  var f = document.getElementById("firstname").value;
+  if(f == "")
+ 	 {
+	alert("Enter First Name Name");
+	return false;
+ 	}
+  
+  rz=/^[A-Za-z]+$/;
+	if(!(rz.test(f)))
+	{
+		flag=false;
+		alert("First name should contain characters only");
+		document.getElementById("firstname").value = "";
+	}
+	if(f.length>30)
+		{
+		alert("Please enter less than 20 characters");
+		return false;
+		}
+  
+  //validation of last name
+	var f = document.getElementById("lastname").value;
+	  if(f == "")
+	 	 {
+		alert("Enter last Name Name");
+		return false;
+	 	}
+	  
+	  rz=/^[A-Za-z]+$/;
+		if(!(rz.test(f)))
+		{
+			flag=false;
+			alert("First name should contain characters only");
+			document.getElementById("firstname").value = "";
+		}
+		if(f.length>30)
+			{
+			alert("Please enter less than 20 characters");
+			return false;
+			}
+	  
+	
+	
+	
+	// validate email id
+	
+	var e= document.getElementById("email").value;
+	if(e == null || e == "" || e == " ")
+	{
+		alert("Please enter the email id !");
+		return false;
+	}
+	
+	var atpos=e.indexOf("@");
+	var dotpos=e.lastIndexOf(".");
+	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=e.length)
+	{
+		alert("Email Id should be of the form abc@xyz.com");
+		document.getElementById("email").value = "";
+		return false;
+	}	
+}

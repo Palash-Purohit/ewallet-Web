@@ -10,6 +10,9 @@
 <link href="${pageContext.request.contextPath}/retinafreestansard/css/form1.css" rel="stylesheet">
 <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/retinafreestansard/css/images/favicon.png" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/retinafreestansard/css/style.css" type="text/css" media="all" />	
+	<script  src="${pageContext.request.contextPath}/doc.js" type="text/javascript" lnaguage="javascript">
+
+</script>
 
 </head>
 <body>
@@ -77,17 +80,17 @@
 					<tr>
 						<td><label>First Name<sup style="color:red">*</sup></label></td>
 						<td><input type="text" placeholder="First Name"
-							name="firstName" id="firstname"  class="namealign"/> </td>
+							name="firstName" id="firstname"  class="namealign" required /> </td>
 					</tr>
 					
 					<tr>
 						<td><label>Last Name<sup style="color:red">*</sup></label></td>
 						<td><input type="text" placeholder="Last Name"
-							name="lastName" id="lastname"/>  </td>
+							name="lastName" id="lastname" required />  </td>
 					</tr>
 					<tr>
 						<td><label>Date Of Birth<sup style="color:red">*</sup></label></td>
-						<td><input type="date" name="dateOfBirth" id="dateofbirth" class="namealign" /></td>
+						<td><input type="date" name="dateOfBirth" id="dateofbirth" class="namealign" required /></td>
 					</tr>
 					<tr>
 					
@@ -103,14 +106,14 @@
 					<tr>
 						<td><label>Mobile Number<sup style="color:red">*</sup></label></td>
 						<td><input type="text" name="phoneNumber"
-							placeholder="Mobile Number" id="mobile"/>
+							placeholder="Mobile Number" id="mobile" required />
 							
 					</tr>
 					
 					<tr>
 						<td><label>E-mail<sup style="color:red">*</sup></label></td>
 						<td><input type="email" name="email" id="email"
-							placeholder="Email" /></td>
+							placeholder="Email" required  /></td>
 					</tr>
 				<tr>
 						<td><label>Password<sup style="color:red">*</sup></label></td>
@@ -130,7 +133,7 @@
 
 					<tr>
 						<td></td>
-						<td><input type="submit" value="Sign Up" onclick="return validateForm()" id="submit"/></td>
+						<td><input type="submit" value="Sign Up" onclick="return validateRegistrationForm()" id="submit"/></td>
 					</tr>
 				</table>
 	</div>
