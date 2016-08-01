@@ -45,7 +45,7 @@ public class Transaction extends HttpServlet {
 		int b=ts.booking(transact);
 		System.out.println(b);
 		req.setAttribute("name", name);
-        req.getRequestDispatcher("success.jsp").forward(req, resp);
+        req.getRequestDispatcher("LoginStatus.jsp").forward(req, resp);
 	}
 
 }

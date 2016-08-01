@@ -67,7 +67,7 @@
 	
 	
 
-		<form action="registercontoller" name="register" method="post">
+		<form action="RegisterContoller" name="register" method="post">
 			<div id="first">
 				<p  text-align: left;">Fields marked with asterisk(<span style="color:red">*</span>) are compulsary Fields.
 					</p>
