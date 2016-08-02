@@ -1,0 +1,15 @@
+controller\Add.class
+bean\TransactBean.class
+service\TansactService.class
+connection\ConnectionManager.class
+dao\BeneficiaryDAO.class
+controller\RegisterContoller.class
+bean\BenBean.class
+bean\User.class
+dao\registerdao.class
+controller\Transaction.class
+service\Service.class
+controller\LoginController.class
+dao\TransactDao.class
+service\BenService.class
+dao\LoginDao.class
