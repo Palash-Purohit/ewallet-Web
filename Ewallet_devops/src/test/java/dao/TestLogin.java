@@ -13,7 +13,7 @@ public class TestLogin {
 		User user1 = new User();
 		long num = 9096438885l;
 		user1 = user.validate(num, "password");
-		System.out.println("0--------------------------------------------------------");
+		System.out.println("---------------test running-----------------------------------------");
 		
 		assertEquals("login successful", "anks", user1.getFirst());
 		
