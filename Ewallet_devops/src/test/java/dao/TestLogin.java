@@ -1,5 +1,4 @@
 package dao;
-
 import bean.User;
 import dao.LoginDao;
 import static org.junit.Assert.assertEquals;
