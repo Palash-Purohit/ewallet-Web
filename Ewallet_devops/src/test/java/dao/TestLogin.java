@@ -11,8 +11,10 @@ public class TestLogin {
 	public void loginSuccess() {
 		LoginDao user = new LoginDao();
 		User user1 = new User();
-		long num = 9096438884l;
+		long num = 9096438885l;
 		user1 = user.validate(num, "password");
+		System.out.println("0--------------------------------------------------------");
+		
 		assertEquals("login successful", "anks", user1.getFirst());
 		
 	}

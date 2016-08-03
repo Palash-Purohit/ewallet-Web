@@ -1,9 +1,9 @@
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\controller\Transaction.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\dao\TransactDao.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\bean\BenBean.java
-C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\controller\RegisterContoller.java
-C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\controller\Add.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\bean\demo.java
+C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\controller\Add.java
+C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\controller\RegisterContoller.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\dao\BeneficiaryDAO.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\dao\registerdao.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\service\BenService.java
@@ -11,7 +11,6 @@ C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\dao\LoginDao.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\service\TansactService.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\connection\ConnectionManager.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\controller\LoginController.java
-C:\Devops_workspace\ewallet\Ewallet_devops\src\test\java\dao\TestLogin.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\bean\User.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\bean\TransactBean.java
 C:\Devops_workspace\ewallet\Ewallet_devops\src\main\java\service\Service.java
