@@ -83,7 +83,7 @@
 			<artifactId>testng</artifactId>
 			<version>6.9.6</version>
 		</dependency>
-<!-- 
+
 		<dependency>
 			<groupId>org.uncommons</groupId>
 			<artifactId>reportng</artifactId>
@@ -95,7 +95,7 @@
 					<artifactId>testng</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency> -->
+		</dependency>
   
   <dependency>
   <groupId>org.apache.maven.surefire</groupId>
