@@ -36,7 +36,7 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
-<!-- 						<org.uncommons.reportng.escape-output>false</org.uncommons.reportng.escape-output> -->
+						<org.uncommons.reportng.escape-output>false</org.uncommons.reportng.escape-output>
 						<deviceId>HTCONE</deviceId>
 					</systemPropertyVariables>
 					<properties>
@@ -50,7 +50,7 @@
 						</property>
 					</properties>
 					<workingDirectory>target/</workingDirectory>
-				</configuration>
+				</configuration> 
 			</plugin>
 			
 			
@@ -103,16 +103,7 @@
   <version>2.19.1</version>
   <type>pom</type>
 </dependency>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    
   
   
   
@@ -120,7 +111,7 @@
    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.10</version>
+      <version>4.11</version>
       <scope>test</scope>
     </dependency>
   	<dependency>
