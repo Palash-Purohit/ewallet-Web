@@ -25,7 +25,7 @@ public void loginFail() {
 	user1 = user.validate(num, "password");
 	System.out.println("---------------test running-----------------------------------------");
 
-	assertEquals("login successful", null, user1.getFirst());
+	assertEquals("login successful",null, user1.getFirst());
 	
 }
 }
