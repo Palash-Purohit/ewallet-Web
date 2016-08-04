@@ -22,7 +22,7 @@ public void loginFail() {
 	LoginDao user = new LoginDao();
 	User user1 = new User();
 	long num = 9093638888l;
-	user1 = user.validate(num, "password");
+	user1 = user.validate(num, "pass");
 	System.out.println("---------------test running-----------------------------------------");
 
 	assertEquals("login successful",null, user1.getFirst());
