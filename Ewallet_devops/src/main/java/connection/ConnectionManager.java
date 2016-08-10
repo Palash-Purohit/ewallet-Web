@@ -22,9 +22,8 @@ public class ConnectionManager {
 	public static String dbUsername = null;
 	public static  String dbPassword =null;
 	public static  String classForName=null;
-
 	
-	
+	public static String env=null;
 	
 	public static Connection getConnection(){
 		 Connection conn = null;
@@ -43,22 +42,33 @@ public class ConnectionManager {
 			
 			System.out.println("---------------connection running----------------");
 			
-			ResourceBundle resourceBundle = ResourceBundle.getBundle("profile");
+			env=System.getenv("ENV");
+			System.out.println(System.getenv("ENV"));
+			
+			if(env!=null){
+				System.out.println("evironment is ="+env);
+			ResourceBundle resourceBundle = ResourceBundle.getBundle(env+"_db");
 		// prop = resourceBundle.getString("driverClass"); 
-			
-			
-			
-			
-			
-			
-	
-			
+						
 			// get the property value and print it out
 			System.out.println(resourceBundle.getString("driverClass"));
 		classForName=resourceBundle.getString("driverClass");
 		  url =resourceBundle.getString("connectionURL");
 		  dbUsername=resourceBundle.getString("username");
 		 dbPassword =resourceBundle.getString("password");
+			}
+			else{
+				ResourceBundle resourceBundle = ResourceBundle.getBundle("profile");
+				// prop = resourceBundle.getString("driverClass"); 
+								
+					// get the property value and print it out
+					System.out.println(resourceBundle.getString("driverClass"));
+				classForName=resourceBundle.getString("driverClass");
+				  url =resourceBundle.getString("connectionURL");
+				  dbUsername=resourceBundle.getString("username");
+				 dbPassword =resourceBundle.getString("password");
+				
+			}
 			}
 		
 			catch (Exception ex) {
