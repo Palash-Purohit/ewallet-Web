@@ -12,20 +12,20 @@ import java.sql.SQLException;
 import java.util.Properties;
 //import java.util.ResourceBundle;
 import java.util.ResourceBundle;
-import org.apache.logging.log4j.core.*;
+//import org.apache.logging.log4j.core.*;
 //import org.apache.velocity.texen.util.PropertiesUtil;
 
 
 public class ConnectionManager {
 
-	public String url = null;
-	public String dbUsername = null;
-	public String dbPassword =null;
-	public String classForName=null;
+	public static String url = null;
+	public static String dbUsername = null;
+	public static String dbPassword =null;
+	public static String classForName=null;
 	
-	public String env=null;
+	public static String env=null;
 	
-	public Connection getConnection(){
+	public static Connection getConnection(){
 		 Connection conn = null;
 	//	Properties prop = new Properties();
 	//	InputStream input = null;
@@ -44,7 +44,7 @@ public class ConnectionManager {
 			
 			env=System.getenv("ENV");
 			System.out.println(System.getenv("ENV"));
-			
+		/*	
 			if(env!=null){
 				System.out.println("evironment is ="+env);
 			ResourceBundle resourceBundle = ResourceBundle.getBundle(env+"_db");
@@ -57,7 +57,7 @@ public class ConnectionManager {
 		  dbUsername=resourceBundle.getString("username");
 		 dbPassword =resourceBundle.getString("password");
 			}
-			else{
+			else{*/
 				ResourceBundle resourceBundle = ResourceBundle.getBundle("profile");
 				// prop = resourceBundle.getString("driverClass"); 
 								
@@ -68,7 +68,7 @@ public class ConnectionManager {
 				  dbUsername=resourceBundle.getString("username");
 				 dbPassword =resourceBundle.getString("password");
 				
-			}
+			//}
 			}
 		
 			catch (Exception ex) {
