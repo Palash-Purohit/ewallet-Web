@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 //import java.util.ResourceBundle;
 import java.util.ResourceBundle;
-
+import org.apache.logging.log4j.core.*;
 //import org.apache.velocity.texen.util.PropertiesUtil;
 
 
@@ -94,6 +94,7 @@ public class ConnectionManager {
 		} 
 	catch (ClassNotFoundException e){
 		e.printStackTrace();
+		 LOGGER.log("context", e);
 		}
 	catch (SQLException e1){
 				e1.printStackTrace();
