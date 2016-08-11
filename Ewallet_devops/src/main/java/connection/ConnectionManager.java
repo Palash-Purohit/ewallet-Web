@@ -94,7 +94,7 @@ public class ConnectionManager {
 		} 
 	catch (ClassNotFoundException e){
 		e.printStackTrace();
-		 LOGGER.log("context", e);
+	//	 LOGGER.log("context", e);
 		}
 	catch (SQLException e1){
 				e1.printStackTrace();
