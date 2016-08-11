@@ -1,0 +1,5 @@
+projectKey=Ewallet
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/Ewallet
+ceTaskId=AVZFcqOugCBw-PFQPpIZ
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVZFcqOugCBw-PFQPpIZ
