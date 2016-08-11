@@ -18,14 +18,14 @@ import java.util.ResourceBundle;
 
 public class ConnectionManager {
 
-	public static String url = null;
-	public static String dbUsername = null;
-	public static  String dbPassword =null;
-	public static  String classForName=null;
+	public String url = null;
+	public String dbUsername = null;
+	public String dbPassword =null;
+	public String classForName=null;
 	
-	public static String env=null;
+	public String env=null;
 	
-	public static Connection getConnection(){
+	public Connection getConnection(){
 		 Connection conn = null;
 	//	Properties prop = new Properties();
 	//	InputStream input = null;
