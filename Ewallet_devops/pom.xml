@@ -10,7 +10,7 @@
 	<url>http://maven.apache.org</url>
 
 	<scm>
-    <connection>scm:git:http://172.29.179.152/ewallet.git</connection>
+    <connection>scm:git:http://10.30.72.151/ewallet.git</connection>
 	</scm>
    
    <distributionManagement>
