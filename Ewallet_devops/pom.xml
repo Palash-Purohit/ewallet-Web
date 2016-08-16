@@ -16,7 +16,7 @@
    <distributionManagement>
     <repository>
         <id>maven_jenkins_nexus</id>
-        <url>http://172.29.179.55:8082/repository/maven_jenkins_nexus/</url>
+        <url>http://10.30.72.138:8082/repository/maven_jenkins_nexus/</url>
     </repository>
 </distributionManagement>
 
@@ -224,7 +224,7 @@
 			<id>test</id>
 			<properties>
 				<db.driverClass>com.mysql.jdbc.Driver</db.driverClass>
-				<db.connectionURL>jdbc:mysql://172.29.180.139:3306/wallet</db.connectionURL>
+				<db.connectionURL>jdbc:mysql://10.30.72.97:3306/wallet</db.connectionURL>
 				<db.username>root</db.username>
 				<db.password></db.password>
 
@@ -236,7 +236,7 @@
 			<id>production</id>
 			<properties>
 				<db.driverClass>com.mysql.jdbc.Driver</db.driverClass>
-				<db.connectionURL>jdbc:mysql://172.29.180.139:3306/wallet</db.connectionURL>
+				<db.connectionURL>jdbc:mysql://10.30.72.97:3306/wallet</db.connectionURL>
 				<db.username>root</db.username>
 				<db.password></db.password>
 
@@ -246,7 +246,7 @@
 			<id>staging</id>
 			<properties>
 				<db.driverClass>com.mysql.jdbc.Driver</db.driverClass>
-				<db.connectionURL>jdbc:mysql://172.29.180.139:3306/wallet</db.connectionURL>
+				<db.connectionURL>jdbc:mysql://10.30.72.97:3306/wallet</db.connectionURL>
 				<db.username>root</db.username>
 				<db.password></db.password>
 
@@ -257,7 +257,7 @@
 			<id>dev</id>
 			<properties>
 				<db.driverClass>com.mysql.jdbc.Driver</db.driverClass>
-				<db.connectionURL>jdbc:mysql://172.29.180.139:3306/wallet</db.connectionURL>
+				<db.connectionURL>jdbc:mysql://10.30.72.97:3306/wallet</db.connectionURL>
 				<db.username>root</db.username>
 				<db.password></db.password>
 
